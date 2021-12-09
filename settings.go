@@ -18,7 +18,7 @@ const API_URI_64 = "https://api64.ipify.org"
 // This is the ipify service base URI for IPV6 resolution.
 const API_URI_6 = "https://api6.ipify.org"
 
-// The user-agent string is provided so that I can (eventually) keep track of
+// USER_AGENT string is provided so that I can (eventually) keep track of
 // what libraries to support over time.  EG: Maybe the service is used
 // primarily by Windows developers, and I should invest more time in improving
 // those integrations.

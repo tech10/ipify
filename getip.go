@@ -3,15 +3,16 @@ package ipify
 import (
 	"errors"
 	"fmt"
-	"github.com/jpillora/backoff"
 	"io"
 	"net/http"
 	"time"
+
+	"github.com/jpillora/backoff"
 )
 
 func getIp(url string) (string, error) {
 	if url == "" {
-		return "", errors.New("IP address retrieval URL is blank.")
+		return "", errors.New("ip address retrieval URL is blank")
 	}
 	b := &backoff.Backoff{
 		Jitter: true,

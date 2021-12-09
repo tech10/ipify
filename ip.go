@@ -38,7 +38,7 @@ func DefaultIp() *Ip {
 // depending on which function is nil.
 func (i *Ip) Retrieve() error {
 	if i.Ip4f == nil && i.Ip6f == nil {
-		return errors.New("IP functions are nil, unable to retrieve addresses.")
+		return errors.New("ip functions are nil, unable to retrieve addresses")
 	}
 	i.r4()
 	i.r6()
