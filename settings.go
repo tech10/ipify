@@ -3,7 +3,6 @@ package ipify
 import (
 	"fmt"
 	"runtime"
-	"strings"
 )
 
 // The maximum amount of tries to attempt when making API calls.
@@ -22,4 +21,4 @@ const API_URI_6 = "https://api6.ipify.org"
 // what libraries to support over time.  EG: Maybe the service is used
 // primarily by Windows developers, and I should invest more time in improving
 // those integrations.
-var USER_AGENT = fmt.Sprintf("ipify/%s go/%s %s", VERSION, runtime.Version()[2:], strings.Title(runtime.GOOS))
+var USER_AGENT = fmt.Sprintf("ipify/%s go/%s %s", VERSION, runtime.Version()[2:], runtime.GOOS)
