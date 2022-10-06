@@ -13,21 +13,21 @@ package ipify
 //
 // Usage:
 //
-//		package main
+//	package main
 //
-//		import (
-//			"fmt"
-//			"github.com/tech10/ipify"
-//		)
+//	import (
+//		"fmt"
+//		"github.com/tech10/ipify"
+//	)
 //
-//		func main() {
-//			ip, err := ipify.GetIp()
-//			if err != nil {
-//				fmt.Println("Couldn't get my IP address:", err)
-//			} else {
-//				fmt.Println("My IP address is:", ip)
-//			}
+//	func main() {
+//		ip, err := ipify.GetIp()
+//		if err != nil {
+//			fmt.Println("Couldn't get my IP address:", err)
+//		} else {
+//			fmt.Println("My IP address is:", ip)
 //		}
+//	}
 func GetIp() (string, error) {
 	return getIp(API_URI_64)
 }
